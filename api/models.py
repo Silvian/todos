@@ -13,6 +13,7 @@ from rest_framework.authtoken.models import Token
 
 class Todo(models.Model):
     """Todo object model class."""
+
     task = models.TextField()
     created_date = models.DateField(
         default=datetime.date.today,
