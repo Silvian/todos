@@ -1,7 +1,7 @@
 # todos
 Novastone To-Do list project
 
-he application provides APIs only. There is no web UI or client application for this service, only a stand-alone service with RESTful APIs.
+The application provides APIs only. There is no web UI or client application for this service, only a stand-alone service with RESTful APIs.
  
 The application must be able to
 -  Use username and password (or equivalent) to log in users
