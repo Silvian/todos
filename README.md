@@ -38,21 +38,21 @@ to run in a docker environment.
 
 `DATABASE_PASSWORD=postgres`
 
-2. Inside the project base directory where docker-compose.yml file can be found, run the following commands:
+3. Inside the project base directory where docker-compose.yml file can be found, run the following commands:
 #### docker-compose up --build
 
-3. Once the process has finished and the postgres sql database and application are running,
+4. Once the process has finished and the postgres sql database and application are running,
 run the migrations and load data command inside docker as following:
 #### docker-compose run --rm web scripts/migrate_loaddata.sh
 
-4. This also creates a default user: root with password: root
+5. This also creates a default user: root with password: root
 
-5. Login to the django administration page at: http://localhost:8000/admin/ with the credentials above to verify this.
+6. Login to the django administration page at: http://localhost:8000/admin/ with the credentials above to verify this.
 
 
 Please visit http://localhost:8000/api/ for the API user guide django rest framework documentation and test web interface.
 
-Note: you can login with the default user created here or create other users via django admin panel.
+*Note:* you can login with the default user created here or create other users via django admin panel.
 Any new users created must be given permissions to create/update/delete todo lists in the admin panel. 
 
 
