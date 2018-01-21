@@ -1,4 +1,4 @@
-# todos
+# ToDos
 Novastone To-Do list project
 
 The application provides APIs only. There is no web UI or client application for this service, only a stand-alone service with RESTful APIs.
@@ -20,3 +20,27 @@ Considerations:
 -  A quick, sure and repeatable proof that every element of the code works as intended, should be delivered alongside the service
 -  Any libraries and frameworks can be used as long as they are publically available or included with the code.
  
+
+Installation Guide:
+
+This project is dockerized so the following guide will highlight the requirements and steps needed
+to run in a docker environment.
+
+1. Install docker and docker compose specific to your operating system. See https://www.docker.com for more details.
+
+2. Inside the project root where docker-compose.yml file can be found, run the following commands:
+#### docker-compose up --build
+
+3. Once the process has finished and the postres sql database and application are running,
+run the migrations and load data command inside docker as following:
+#### docker-compose run --rm web scripts/migrate_loaddata.sh
+
+4. This also creates a default user: root with password: root
+
+5. Login to the django administration page at: http://localhost:8000/admin with the credentials above to verify this.
+
+
+Please visit http://localhost:8000/api/ for the API user guide django rest framework documentation and test web interface.
+
+Note: you can login with the default user created here or create other users via django admin panel.
+Any new users created must be given permissions to create/update/delete todo lists in the admin panel. 
