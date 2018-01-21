@@ -40,6 +40,6 @@ class Todo(models.Model):
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
-    """Generate authentication API token for any created user instance."""
+    """Generate authentication API token for a created user instance."""
     if created:
         Token.objects.create(user=instance)

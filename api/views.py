@@ -9,8 +9,10 @@ from .models import Todo
 
 class TodoViewSet(viewsets.ModelViewSet, RetrieveUpdateDestroyAPIView):
     """
-    Todo list item view set.
-    Setting the query set and the serializer.
+    Todo list view set.
+
+    Allows listing, retrieving, updating and deleting a todo item
+    for the authenticated request user.
     """
 
     queryset = Todo.objects.all()
