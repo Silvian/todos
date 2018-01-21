@@ -26,12 +26,12 @@ Installation Guide:
 This project is dockerized so the following guide will highlight the requirements and steps needed
 to run in a docker environment.
 
-1. Install docker and docker compose specific to your operating system. See https://www.docker.com for more details.
+1. Install docker and docker-compose specific to your operating system. See https://www.docker.com for more details.
 
 2. Inside the project root where docker-compose.yml file can be found, run the following commands:
 #### docker-compose up --build
 
-3. Once the process has finished and the postres sql database and application are running,
+3. Once the process has finished and the postgres sql database and application are running,
 run the migrations and load data command inside docker as following:
 #### docker-compose run --rm web scripts/migrate_loaddata.sh
 
