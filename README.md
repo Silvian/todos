@@ -1,5 +1,5 @@
 # ToDos
-### Novastone To-Do list project
+### To-Do list project
 
 The application provides APIs only. There is no web UI or client application for this service, only a stand-alone service with RESTful APIs.
  
